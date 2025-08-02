@@ -63,10 +63,7 @@ Then visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 📸 Screenshots
 
-*Coming soon...*
-
-🙋‍♀️ Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+<img width="1143" height="722" alt="image" src="https://github.com/user-attachments/assets/92c3d061-3b27-41a7-81de-ef3a7ed1be9b" />
 
 📬 Contact
 For questions or support, reach out to saptarshimaji10@gmail.com 
