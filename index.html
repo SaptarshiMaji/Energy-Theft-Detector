@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Theft Detection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="number"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    button {
+      grid-column: span 2;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Energy Theft Detection</h1>
+    <h2>Enter Energy Usage Data</h2>
+    <form action="/predict" method="POST">
+      <label>Electricity Facility (kW):</label>
+      <input type="number" step="any" name="electricity" required>
+      <label>Cooling Electricity (kW):</label>
+      <input type="number" step="any" name="cooling" required>
+      <label>Heating Electricity (kW):</label>
+      <input type="number" step="any" name="heating" required>
+      <label>Equipment Usage (kW):</label>
+      <input type="number" step="any" name="equipment" required>
+      <label>Gas Usage (kW):</label>
+      <input type="number" step="any" name="gas" required>
+      <label>Water Heater Usage (kW):</label>
+      <input type="number" step="any" name="waterHeater" required>
+      <button type="submit">Check for Theft</button>
+    </form>
+  </div>
+</body>
+</html>
